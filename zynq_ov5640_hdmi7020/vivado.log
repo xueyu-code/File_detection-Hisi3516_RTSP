@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 27 09:37:58 2023
+# Process ID: 6436
+# Current directory: C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11524 C:\Users\Lucy\Desktop\zynq_ov5640_hdmi7020\zynq_ov5640_hdmi.xpr
+# Log file: C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020/vivado.log
+# Journal file: C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020/zynq_ov5640_hdmi.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VIVADO2018.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 814.648 ; gain = 234.832
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020/zynq_ov5640_hdmi.sdk -hwspec C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020/zynq_ov5640_hdmi.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020/zynq_ov5640_hdmi.sdk -hwspec C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020/zynq_ov5640_hdmi.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 27 09:51:15 2023...

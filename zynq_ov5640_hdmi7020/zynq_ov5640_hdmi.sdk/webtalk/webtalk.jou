@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Fri Mar 24 10:47:42 2023
+# Process ID: 11276
+# Current directory: C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020/zynq_ov5640_hdmi.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020/zynq_ov5640_hdmi.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Lucy/Desktop/zynq_ov5640_hdmi7020/zynq_ov5640_hdmi.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

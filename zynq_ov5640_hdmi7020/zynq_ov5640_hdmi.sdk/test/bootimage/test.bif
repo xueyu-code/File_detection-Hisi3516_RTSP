@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\Lucy\Desktop\zynq_ov5640_hdmi7020\zynq_ov5640_hdmi.sdk\FSBL\Debug\FSBL.elf
+	C:\Users\Lucy\Desktop\zynq_ov5640_hdmi7020\zynq_ov5640_hdmi.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
+	C:\Users\Lucy\Desktop\zynq_ov5640_hdmi7020\zynq_ov5640_hdmi.sdk\test\Debug\test.elf
+}

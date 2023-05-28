@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>ov5640_driver</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>cmos_rstn</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>cmos_rstn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CMOS_RSTN.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>rstn</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rstn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RSTN.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">rstn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>ov5640_driver</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>d0efb5b5</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>ov5640_driver</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>d0efb5b5</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>448566e0</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rstn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_scl</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_sda</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_pclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_vsync</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_href</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_rstn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>pclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>data_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cmos_clk_en</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rgb_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">23</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vsync</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>RESET_CNT_MAX</spirit:name>
+        <spirit:displayName>Reset Cnt Max</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.RESET_CNT_MAX">5000000</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>cmos_reg_conf.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>coms_data_convert.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>iic_sccb.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>ov5640_driver.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_cf1d8629</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>cmos_reg_conf.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>coms_data_convert.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>iic_sccb.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>ov5640_driver.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/ov5640_driver_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_448566e0</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>ov5640_driver_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>RESET_CNT_MAX</spirit:name>
+      <spirit:displayName>Reset Cnt Max</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.RESET_CNT_MAX">5000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">ov5640_driver_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>ov5640_driver_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>12</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-09-03T14:34:46Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4be29fd3_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d74180e_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10aaf063_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71972bfd_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2087fb1c_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7667f06c_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c2e7cc2_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@420ce84b_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@166bdb0e_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@eab7b3e_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78148da2_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cfa9e14_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f77189b_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63898453_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@241cdafe_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2657d6be_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9cb94b6_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e81a094_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52026f42_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74be7235_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@749fba4f_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79fb9b1f_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c3c6a8_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ec381d5_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76c53c4_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d8eebf3_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@595237e7_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fd0d5d5_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@417b04de_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37f08f4_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@916ac43_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eb98559_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@477949f4_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68ed0ee9_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76553494_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73f8cf54_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78610ac7_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19085b4e_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@706d6a31_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4216576b_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aa59482_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d9b78e7_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74e7190b_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17166c46_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6399300a_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a6bc416_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cb2f067_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16779abc_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@141e4550_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@746b99f2_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39bf8e06_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67292f0f_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3368c3b7_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30e66c9a_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34f930b5_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6aefc361_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19c238c8_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31754443_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@733def7_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e22a3cd_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ba89f9c_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25357d7d_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bb1b40e_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4428fef6_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c23cea_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68c76745_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41ea2071_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1eaf2260_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@262ba1ad_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12936fe_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f112793_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2daccefa_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1583a4d2_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cdd7863_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@712324af_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d20c4_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bdc46fd_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f220914_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@357b97ec_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@240d1ad_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51023a3a_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e0d947a_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ac95510_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b5fb26_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41597578_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7988611_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3889807b_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2facaaf7_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21717ecb_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4628e346_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6705a918_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73464083_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78855369_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54ba9428_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19410653_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52742037_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3af5f69e_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20f48209_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30cb169d_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f3d6d0f_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3eac8c97_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@377c5d1a_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b67d517_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4525fc53_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d1c29a3_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ec54c4f_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f32007a_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5120f919_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78f24796_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f61ea45_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@210a3222_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2de3e023_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@316f6ce3_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48bb4476_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c63a88a_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11f00f77_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6616243_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11ee481b_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17f2d4ee_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13959ddd_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@654ee1c7_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@115f3385_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a7f0762_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a7e2f19_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@459cdc7c_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@596acf10_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fc5d2b5_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37d895ef_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@538321eb_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67a2586b_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b89f5ba_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b65f32d_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f9cd55e_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55ac7a72_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21985324_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7440c32f_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f1cdc50_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d4d2f67_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68f61951_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78355921_ARCHIVE_LOCATION">c:/vivado_hls_sobel/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@731cf09_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/zynq_ov5640_hdmi/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2caa2f17_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/zynq_ov5640_hdmi/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e66c52_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/zynq_ov5640_hdmi/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f22369f_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/zynq_ov5640_hdmi/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45b6b2d6_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/zynq_ov5640_hdmi/repo/ov5640_driver</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@641c6349_ARCHIVE_LOCATION">c:/Users/Administrator/Desktop/zynq_ov5640_hdmi/repo/ov5640_driver</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8b90d2c6"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="74fb9fd9"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="d7b56c9d"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="f010d264"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="cf0343f4"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
