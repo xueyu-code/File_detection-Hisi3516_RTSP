@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'hls_fire_dection' consists of the following:&#xD;&#xA;&#x9;'mul' operation of DSP[81] ('tmp_12_i', skin_hls/top.cpp:29) [78]  (2.82 ns)&#xD;&#xA;&#x9;'add' operation of DSP[81] ('tmp4', skin_hls/top.cpp:29) [81]  (2.73 ns)&#xD;&#xA;&#x9;'add' operation of DSP[82] ('tmp_15_i', skin_hls/top.cpp:29) [82]  (2.73 ns)&#xD;&#xA;&#x9;'xor' operation ('cb', skin_hls/top.cpp:29) [84]  (0.806 ns)&#xD;&#xA;&#x9;'icmp' operation ('tmp_33_i', skin_hls/top.cpp:38) [106]  (1.31 ns)" projectName="skin_hls" solutionName="solution1" date="2023-03-31T12:32:11.450+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (10.4ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="skin_hls" solutionName="solution1" date="2023-03-31T12:32:11.434+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Block_Mat.exit45_pro' to 'Block_Mat_exit45_pro'." projectName="skin_hls" solutionName="solution1" date="2023-03-31T12:32:10.325+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Block_Mat.exit45_proc77' to 'Block_Mat.exit45_pro' (skin_hls/top.cpp:81)" projectName="skin_hls" solutionName="solution1" date="2023-03-31T12:32:10.294+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;24, 1080, 1920, 4096>' to 'AXIvideo2Mat' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:49:9)" projectName="skin_hls" solutionName="solution1" date="2023-03-31T12:32:09.653+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo&lt;24, 1080, 1920, 4096>' to 'Mat2AXIvideo' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:78:50)" projectName="skin_hls" solutionName="solution1" date="2023-03-31T12:32:09.653+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_0.data_stream.V' (skin_hls/top.cpp:80)." projectName="skin_hls" solutionName="solution1" date="2023-03-31T12:32:08.169+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_1.data_stream.V' (skin_hls/top.cpp:81)." projectName="skin_hls" solutionName="solution1" date="2023-03-31T12:32:08.075+0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR." projectName="skin_hls" solutionName="solution1" date="2023-03-31T12:32:07.857+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

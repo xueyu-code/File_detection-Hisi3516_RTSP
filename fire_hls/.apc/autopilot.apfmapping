@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="top.h" path="C:\Users\Lucy\Desktop\skin_test\skin_hls\top.h"/>
+    <originFiles name="top.cpp" path="C:\Users\Lucy\Desktop\skin_test\skin_hls\top.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test.PNG" path="C:\Users\Lucy\Desktop\skin_test\skin_hls\test.PNG"/>
+    <originFiles name="skin_tb.cpp" path="C:\Users\Lucy\Desktop\skin_test\skin_hls\skin_tb.cpp"/>
+    <originFiles name="home.png" path="C:\Users\Lucy\Desktop\skin_test\skin_hls\home.png"/>
+    <originFiles name="fire_6.PNG" path="C:\Users\Lucy\Desktop\skin_test\skin_hls\fire_6.PNG"/>
+    <originFiles name="fire_5.PNG" path="C:\Users\Lucy\Desktop\skin_test\skin_hls\fire_5.PNG"/>
+    <originFiles name="fire_3.png" path="C:\Users\Lucy\Desktop\skin_test\skin_hls\fire_3.png"/>
+    <originFiles name="fire_2.png" path="C:\Users\Lucy\Desktop\skin_test\skin_hls\fire_2.png"/>
+    <originFiles name="fire_1.png" path="C:\Users\Lucy\Desktop\skin_test\skin_hls\fire_1.png"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

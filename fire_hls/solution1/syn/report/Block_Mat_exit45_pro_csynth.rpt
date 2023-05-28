@@ -1,0 +1,183 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_Mat_exit45_pro'
+================================================================
+* Date:           Fri Mar 31 12:32:12 2023
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        skin_hls
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.401|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      1|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     42|
+|Register         |        -|      -|      67|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|      67|     43|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |ap_done                 |   3|          2|    1|          2|
+    |ap_return_0             |   3|          2|   32|         64|
+    |ap_return_1             |   3|          2|   32|         64|
+    |b_low_out_blk_n         |   3|          2|    1|          2|
+    |b_up_out_blk_n          |   3|          2|    1|          2|
+    |cols_out_blk_n          |   3|          2|    1|          2|
+    |g_low_out_blk_n         |   3|          2|    1|          2|
+    |g_up_out_blk_n          |   3|          2|    1|          2|
+    |img_1_cols_V_out_blk_n  |   3|          2|    1|          2|
+    |img_1_rows_V_out_blk_n  |   3|          2|    1|          2|
+    |r_low_out_blk_n         |   3|          2|    1|          2|
+    |r_up_out_blk_n          |   3|          2|    1|          2|
+    |real_start              |   3|          2|    1|          2|
+    |rows_out_blk_n          |   3|          2|    1|          2|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   |  42|         28|   76|        152|
+    +------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------+----+----+-----+-----------+
+    |       Name       | FF | LUT| Bits| Const Bits|
+    +------------------+----+----+-----+-----------+
+    |ap_CS_fsm         |   1|   0|    1|          0|
+    |ap_done_reg       |   1|   0|    1|          0|
+    |ap_return_0_preg  |  32|   0|   32|          0|
+    |ap_return_1_preg  |  32|   0|   32|          0|
+    |start_once_reg    |   1|   0|    1|          0|
+    +------------------+----+----+-----+-----------+
+    |Total             |  67|   0|   67|          0|
+    +------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+----------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                   |  in |    1| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|ap_rst                   |  in |    1| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|start_full_n             |  in |    1| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|ap_done                  | out |    1| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|ap_continue              |  in |    1| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|start_out                | out |    1| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|start_write              | out |    1| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|ap_return_0              | out |   32| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|ap_return_1              | out |   32| ap_ctrl_hs | Block_Mat.exit45_pro | return value |
+|rows                     |  in |   32|   ap_none  |         rows         |    scalar    |
+|cols                     |  in |   32|   ap_none  |         cols         |    scalar    |
+|r_low                    |  in |   32|   ap_none  |         r_low        |    scalar    |
+|r_up                     |  in |   32|   ap_none  |         r_up         |    scalar    |
+|g_low                    |  in |   32|   ap_none  |         g_low        |    scalar    |
+|g_up                     |  in |   32|   ap_none  |         g_up         |    scalar    |
+|b_low                    |  in |   32|   ap_none  |         b_low        |    scalar    |
+|b_up                     |  in |   32|   ap_none  |         b_up         |    scalar    |
+|rows_out_din             | out |   32|   ap_fifo  |       rows_out       |    pointer   |
+|rows_out_full_n          |  in |    1|   ap_fifo  |       rows_out       |    pointer   |
+|rows_out_write           | out |    1|   ap_fifo  |       rows_out       |    pointer   |
+|cols_out_din             | out |   32|   ap_fifo  |       cols_out       |    pointer   |
+|cols_out_full_n          |  in |    1|   ap_fifo  |       cols_out       |    pointer   |
+|cols_out_write           | out |    1|   ap_fifo  |       cols_out       |    pointer   |
+|img_1_rows_V_out_din     | out |   32|   ap_fifo  |   img_1_rows_V_out   |    pointer   |
+|img_1_rows_V_out_full_n  |  in |    1|   ap_fifo  |   img_1_rows_V_out   |    pointer   |
+|img_1_rows_V_out_write   | out |    1|   ap_fifo  |   img_1_rows_V_out   |    pointer   |
+|img_1_cols_V_out_din     | out |   32|   ap_fifo  |   img_1_cols_V_out   |    pointer   |
+|img_1_cols_V_out_full_n  |  in |    1|   ap_fifo  |   img_1_cols_V_out   |    pointer   |
+|img_1_cols_V_out_write   | out |    1|   ap_fifo  |   img_1_cols_V_out   |    pointer   |
+|r_low_out_din            | out |   32|   ap_fifo  |       r_low_out      |    pointer   |
+|r_low_out_full_n         |  in |    1|   ap_fifo  |       r_low_out      |    pointer   |
+|r_low_out_write          | out |    1|   ap_fifo  |       r_low_out      |    pointer   |
+|r_up_out_din             | out |   32|   ap_fifo  |       r_up_out       |    pointer   |
+|r_up_out_full_n          |  in |    1|   ap_fifo  |       r_up_out       |    pointer   |
+|r_up_out_write           | out |    1|   ap_fifo  |       r_up_out       |    pointer   |
+|g_low_out_din            | out |   32|   ap_fifo  |       g_low_out      |    pointer   |
+|g_low_out_full_n         |  in |    1|   ap_fifo  |       g_low_out      |    pointer   |
+|g_low_out_write          | out |    1|   ap_fifo  |       g_low_out      |    pointer   |
+|g_up_out_din             | out |   32|   ap_fifo  |       g_up_out       |    pointer   |
+|g_up_out_full_n          |  in |    1|   ap_fifo  |       g_up_out       |    pointer   |
+|g_up_out_write           | out |    1|   ap_fifo  |       g_up_out       |    pointer   |
+|b_low_out_din            | out |   32|   ap_fifo  |       b_low_out      |    pointer   |
+|b_low_out_full_n         |  in |    1|   ap_fifo  |       b_low_out      |    pointer   |
+|b_low_out_write          | out |    1|   ap_fifo  |       b_low_out      |    pointer   |
+|b_up_out_din             | out |   32|   ap_fifo  |       b_up_out       |    pointer   |
+|b_up_out_full_n          |  in |    1|   ap_fifo  |       b_up_out       |    pointer   |
+|b_up_out_write           | out |    1|   ap_fifo  |       b_up_out       |    pointer   |
++-------------------------+-----+-----+------------+----------------------+--------------+
+

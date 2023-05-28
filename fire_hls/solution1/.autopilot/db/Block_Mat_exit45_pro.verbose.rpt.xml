@@ -1,0 +1,170 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Block_Mat_exit45_pro'" level="0">
+<item name = "Date">Fri Mar 31 12:32:12 2023
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">skin_hls</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 3.401, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">0, 0, 0, 0, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 1</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 42</column>
+<column name="Register">-, -, 67, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_block_state1">or, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done">3, 2, 1, 2</column>
+<column name="ap_return_0">3, 2, 32, 64</column>
+<column name="ap_return_1">3, 2, 32, 64</column>
+<column name="b_low_out_blk_n">3, 2, 1, 2</column>
+<column name="b_up_out_blk_n">3, 2, 1, 2</column>
+<column name="cols_out_blk_n">3, 2, 1, 2</column>
+<column name="g_low_out_blk_n">3, 2, 1, 2</column>
+<column name="g_up_out_blk_n">3, 2, 1, 2</column>
+<column name="img_1_cols_V_out_blk_n">3, 2, 1, 2</column>
+<column name="img_1_rows_V_out_blk_n">3, 2, 1, 2</column>
+<column name="r_low_out_blk_n">3, 2, 1, 2</column>
+<column name="r_up_out_blk_n">3, 2, 1, 2</column>
+<column name="real_start">3, 2, 1, 2</column>
+<column name="rows_out_blk_n">3, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_return_0_preg">32, 0, 32, 0</column>
+<column name="ap_return_1_preg">32, 0, 32, 0</column>
+<column name="start_once_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="start_full_n">in, 1, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="start_out">out, 1, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="start_write">out, 1, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="ap_return_0">out, 32, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="ap_return_1">out, 32, ap_ctrl_hs, Block_Mat.exit45_pro, return value</column>
+<column name="rows">in, 32, ap_none, rows, scalar</column>
+<column name="cols">in, 32, ap_none, cols, scalar</column>
+<column name="r_low">in, 32, ap_none, r_low, scalar</column>
+<column name="r_up">in, 32, ap_none, r_up, scalar</column>
+<column name="g_low">in, 32, ap_none, g_low, scalar</column>
+<column name="g_up">in, 32, ap_none, g_up, scalar</column>
+<column name="b_low">in, 32, ap_none, b_low, scalar</column>
+<column name="b_up">in, 32, ap_none, b_up, scalar</column>
+<column name="rows_out_din">out, 32, ap_fifo, rows_out, pointer</column>
+<column name="rows_out_full_n">in, 1, ap_fifo, rows_out, pointer</column>
+<column name="rows_out_write">out, 1, ap_fifo, rows_out, pointer</column>
+<column name="cols_out_din">out, 32, ap_fifo, cols_out, pointer</column>
+<column name="cols_out_full_n">in, 1, ap_fifo, cols_out, pointer</column>
+<column name="cols_out_write">out, 1, ap_fifo, cols_out, pointer</column>
+<column name="img_1_rows_V_out_din">out, 32, ap_fifo, img_1_rows_V_out, pointer</column>
+<column name="img_1_rows_V_out_full_n">in, 1, ap_fifo, img_1_rows_V_out, pointer</column>
+<column name="img_1_rows_V_out_write">out, 1, ap_fifo, img_1_rows_V_out, pointer</column>
+<column name="img_1_cols_V_out_din">out, 32, ap_fifo, img_1_cols_V_out, pointer</column>
+<column name="img_1_cols_V_out_full_n">in, 1, ap_fifo, img_1_cols_V_out, pointer</column>
+<column name="img_1_cols_V_out_write">out, 1, ap_fifo, img_1_cols_V_out, pointer</column>
+<column name="r_low_out_din">out, 32, ap_fifo, r_low_out, pointer</column>
+<column name="r_low_out_full_n">in, 1, ap_fifo, r_low_out, pointer</column>
+<column name="r_low_out_write">out, 1, ap_fifo, r_low_out, pointer</column>
+<column name="r_up_out_din">out, 32, ap_fifo, r_up_out, pointer</column>
+<column name="r_up_out_full_n">in, 1, ap_fifo, r_up_out, pointer</column>
+<column name="r_up_out_write">out, 1, ap_fifo, r_up_out, pointer</column>
+<column name="g_low_out_din">out, 32, ap_fifo, g_low_out, pointer</column>
+<column name="g_low_out_full_n">in, 1, ap_fifo, g_low_out, pointer</column>
+<column name="g_low_out_write">out, 1, ap_fifo, g_low_out, pointer</column>
+<column name="g_up_out_din">out, 32, ap_fifo, g_up_out, pointer</column>
+<column name="g_up_out_full_n">in, 1, ap_fifo, g_up_out, pointer</column>
+<column name="g_up_out_write">out, 1, ap_fifo, g_up_out, pointer</column>
+<column name="b_low_out_din">out, 32, ap_fifo, b_low_out, pointer</column>
+<column name="b_low_out_full_n">in, 1, ap_fifo, b_low_out, pointer</column>
+<column name="b_low_out_write">out, 1, ap_fifo, b_low_out, pointer</column>
+<column name="b_up_out_din">out, 32, ap_fifo, b_up_out, pointer</column>
+<column name="b_up_out_full_n">in, 1, ap_fifo, b_up_out, pointer</column>
+<column name="b_up_out_write">out, 1, ap_fifo, b_up_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,1085 @@
+INFO-FLOW: Workspace C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1 opened at Fri Mar 31 12:31:53 +0800 2023
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.105 sec.
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.107 sec.
+Command     ap_source done; 0.107 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-2 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-2'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_export -display_name=fire 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.204 sec.
+Execute   set_part xc7z020clg400-2 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-2 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   config_export -display_name fire -format ip_catalog -rtl verilog 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     config_compile -blackbox  
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'skin_hls/top.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling skin_hls/top.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted skin_hls/top.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/VIVADO2018.3/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "skin_hls/top.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot" -I "D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp" 
+INFO-FLOW: exec D:/VIVADO2018.3/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/VIVADO2018.3/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E skin_hls/top.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot -I D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp
+Command       clang done; 0.698 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/VIVADO2018.3/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.622 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/VIVADO2018.3/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot" -I "D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp"  -o "C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/VIVADO2018.3/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/VIVADO2018.3/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot -I D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/useless.bc
+Command       clang done; 2.512 sec.
+INFO-FLOW: Done: GCC PP time: 3.8 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp std=gnu++98 -directive=C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/VIVADO2018.3/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.569 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp std=gnu++98 -directive=C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/VIVADO2018.3/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.561 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/VIVADO2018.3/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.top.pp.0.cpp.diag.yml C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.top.pp.0.cpp.out.log 2> C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.top.pp.0.cpp.err.log 
+Command       ap_eval done; 0.537 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr D:/VIVADO2018.3/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/tidy-3.1.top.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/tidy-3.1.top.pp.0.cpp.out.log 2> C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/tidy-3.1.top.pp.0.cpp.err.log 
+Command         ap_eval done; 0.728 sec.
+Execute         ap_eval exec -ignorestderr D:/VIVADO2018.3/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/xilinx-legacy-rewriter.top.pp.0.cpp.out.log 2> C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/xilinx-legacy-rewriter.top.pp.0.cpp.err.log 
+Command         ap_eval done; 0.553 sec.
+Command       tidy_31 done; 1.292 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2.4 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/VIVADO2018.3/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.375 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/VIVADO2018.3/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot" -I "D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.bc" 
+INFO-FLOW: exec D:/VIVADO2018.3/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/VIVADO2018.3/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot -I D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.bc
+Command       clang done; 2.929 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/top.g.bc -hls-opt -except-internalize fire -LD:/VIVADO2018.3/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 0.92 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 104.008 ; gain = 19.113
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 104.008 ; gain = 19.113
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.pp.bc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.124 sec.
+Execute         llvm-ld C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/VIVADO2018.3/Vivado/2018.3/win64/lib -lfloatconversion -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.548 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top fire -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.g.0.bc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::init' into 'hls::Mat<1080, 1920, 4096>::Mat.1' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, unsigned char>.1' into 'hls::AXIGetBitFields<24, unsigned char>' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, unsigned char>' into 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::write' into 'hls::Mat<1080, 1920, 4096>::operator<<' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::operator<<' into 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::operator<<' into 'hls_fire_dection' (skin_hls/top.cpp:56).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::read' into 'hls::Mat<1080, 1920, 4096>::operator>>' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::operator>>' into 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::operator>>' into 'hls_fire_dection' (skin_hls/top.cpp:20).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<24, unsigned char>.1' into 'hls::AXISetBitFields<24, unsigned char>' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<24, unsigned char>' into 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:143).
+Command         transform done; 0.307 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 150.445 ; gain = 65.551
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.g.1.bc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.309 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+Command         transform done; 0.159 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 184.074 ; gain = 99.180
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.g.1.bc to C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.o.1.bc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_1.data_stream.V' (skin_hls/top.cpp:81).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_0.data_stream.V' (skin_hls/top.cpp:80).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:126) in function 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:73) in function 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls_fire_dection' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls_fire_dection' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:142) in function 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:91) in function 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' completely with a factor of 3.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.1' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'img_0.data_stream.V' (skin_hls/top.cpp:80) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'img_1.data_stream.V' (skin_hls/top.cpp:81) .
+INFO: [XFORM 203-101] Partitioning array 'src_data.val' (skin_hls/top.cpp:14) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst_data.val' (skin_hls/top.cpp:16) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'img_0.data_stream.V' (skin_hls/top.cpp:80) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'img_1.data_stream.V' (skin_hls/top.cpp:81) in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'fire', detected/extracted 4 process function(s): 
+	 'Block_Mat.exit45_proc77'
+	 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>'
+	 'hls_fire_dection'
+	 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>'.
+Command         transform done; 0.872 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (skin_hls/top.cpp:11:11) to (skin_hls/top.cpp:10:43) in function 'hls_fire_dection'... converting 5 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hls_fire_dection' (skin_hls/top.cpp:4)...5 expression(s) balanced.
+Command         transform done; 0.569 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 242.219 ; gain = 157.324
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.o.2.bc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' to 'Mat2AXIvideo' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:78:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' to 'AXIvideo2Mat' (D:/VIVADO2018.3/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:49:9)
+WARNING: [XFORM 203-631] Renaming function 'Block_Mat.exit45_proc77' to 'Block_Mat.exit45_pro' (skin_hls/top.cpp:81)
+Command         transform done; 0.949 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 288.941 ; gain = 204.047
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 3.861 sec.
+Command     elaborate done; 16.278 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'fire' ...
+Execute       ap_set_top_model fire 
+WARNING: [SYN 201-103] Legalizing function name 'Block_Mat.exit45_pro' to 'Block_Mat_exit45_pro'.
+Execute       get_model_list fire -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model fire 
+Execute       preproc_iomode -model Mat2AXIvideo 
+Execute       preproc_iomode -model hls_fire_dection 
+Execute       preproc_iomode -model AXIvideo2Mat 
+Execute       preproc_iomode -model Block_Mat.exit45_pro 
+Execute       get_model_list fire -filter all-wo-channel 
+INFO-FLOW: Model list for configure: Block_Mat.exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire
+INFO-FLOW: Configuring Module : Block_Mat.exit45_pro ...
+Execute       set_default_model Block_Mat.exit45_pro 
+Execute       apply_spec_resource_limit Block_Mat.exit45_pro 
+INFO-FLOW: Configuring Module : AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       apply_spec_resource_limit AXIvideo2Mat 
+INFO-FLOW: Configuring Module : hls_fire_dection ...
+Execute       set_default_model hls_fire_dection 
+Execute       apply_spec_resource_limit hls_fire_dection 
+INFO-FLOW: Configuring Module : Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       apply_spec_resource_limit Mat2AXIvideo 
+INFO-FLOW: Configuring Module : fire ...
+Execute       set_default_model fire 
+Execute       apply_spec_resource_limit fire 
+INFO-FLOW: Model list for preprocess: Block_Mat.exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire
+INFO-FLOW: Preprocessing Module: Block_Mat.exit45_pro ...
+Execute       set_default_model Block_Mat.exit45_pro 
+Execute       cdfg_preprocess -model Block_Mat.exit45_pro 
+Execute       rtl_gen_preprocess Block_Mat.exit45_pro 
+INFO-FLOW: Preprocessing Module: AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       cdfg_preprocess -model AXIvideo2Mat 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+INFO-FLOW: Preprocessing Module: hls_fire_dection ...
+Execute       set_default_model hls_fire_dection 
+Execute       cdfg_preprocess -model hls_fire_dection 
+Execute       rtl_gen_preprocess hls_fire_dection 
+INFO-FLOW: Preprocessing Module: Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       cdfg_preprocess -model Mat2AXIvideo 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+INFO-FLOW: Preprocessing Module: fire ...
+Execute       set_default_model fire 
+Execute       cdfg_preprocess -model fire 
+Execute       rtl_gen_preprocess fire 
+INFO-FLOW: Model list for synthesis: Block_Mat.exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_Mat_exit45_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Block_Mat.exit45_pro 
+Execute       schedule -model Block_Mat.exit45_pro 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.282 sec.
+INFO: [HLS 200-111]  Elapsed time: 17.287 seconds; current allocated memory: 235.830 MB.
+Execute       report -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.sched.adb -f 
+INFO-FLOW: Finish scheduling Block_Mat.exit45_pro.
+Execute       set_default_model Block_Mat.exit45_pro 
+Execute       bind -model Block_Mat.exit45_pro 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Block_Mat.exit45_pro
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.062 seconds; current allocated memory: 236.020 MB.
+Execute       report -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.bind.adb -f 
+INFO-FLOW: Finish binding Block_Mat.exit45_pro.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXIvideo2Mat 
+Execute       schedule -model AXIvideo2Mat 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.139 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.188 seconds; current allocated memory: 236.206 MB.
+Execute       report -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+Execute       db_write -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.sched.adb -f 
+INFO-FLOW: Finish scheduling AXIvideo2Mat.
+Execute       set_default_model AXIvideo2Mat 
+Execute       bind -model AXIvideo2Mat 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=AXIvideo2Mat
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.085 seconds; current allocated memory: 236.486 MB.
+Execute       report -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.bind.adb -f 
+INFO-FLOW: Finish binding AXIvideo2Mat.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hls_fire_dection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model hls_fire_dection 
+Execute       schedule -model hls_fire_dection 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (10.4ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'hls_fire_dection' consists of the following:
+	'mul' operation of DSP[81] ('tmp_12_i', skin_hls/top.cpp:29) [78]  (2.82 ns)
+	'add' operation of DSP[81] ('tmp4', skin_hls/top.cpp:29) [81]  (2.73 ns)
+	'add' operation of DSP[82] ('tmp_15_i', skin_hls/top.cpp:29) [82]  (2.73 ns)
+	'xor' operation ('cb', skin_hls/top.cpp:29) [84]  (0.806 ns)
+	'icmp' operation ('tmp_33_i', skin_hls/top.cpp:38) [106]  (1.31 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.422 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 236.906 MB.
+Execute       report -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.sched.adb -f 
+INFO-FLOW: Finish scheduling hls_fire_dection.
+Execute       set_default_model hls_fire_dection 
+Execute       bind -model hls_fire_dection 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=hls_fire_dection
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.097 seconds; current allocated memory: 237.306 MB.
+Execute       report -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.bind.adb -f 
+INFO-FLOW: Finish binding hls_fire_dection.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Mat2AXIvideo 
+Execute       schedule -model Mat2AXIvideo 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.169 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.265 seconds; current allocated memory: 237.444 MB.
+Execute       report -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.sched.adb -f 
+INFO-FLOW: Finish scheduling Mat2AXIvideo.
+Execute       set_default_model Mat2AXIvideo 
+Execute       bind -model Mat2AXIvideo 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Mat2AXIvideo
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.074 seconds; current allocated memory: 237.706 MB.
+Execute       report -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.bind.adb -f 
+INFO-FLOW: Finish binding Mat2AXIvideo.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fire' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model fire 
+Execute       schedule -model fire 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.089 seconds; current allocated memory: 237.910 MB.
+Execute       report -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.sched.adb -f 
+INFO-FLOW: Finish scheduling fire.
+Execute       set_default_model fire 
+Execute       bind -model fire 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=fire
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.115 seconds; current allocated memory: 238.430 MB.
+Execute       report -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.bind.adb -f 
+INFO-FLOW: Finish binding fire.
+Execute       get_model_list fire -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess Block_Mat.exit45_pro 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+Execute       rtl_gen_preprocess hls_fire_dection 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+Execute       rtl_gen_preprocess fire 
+INFO-FLOW: Model list for RTL generation: Block_Mat.exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_Mat_exit45_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Block_Mat.exit45_pro -vendor xilinx -mg_file C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_Mat_exit45_pro'.
+INFO: [HLS 200-111]  Elapsed time: 0.113 seconds; current allocated memory: 238.701 MB.
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Block_Mat.exit45_pro -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/systemc/Block_Mat_exit45_pro -synmodules Block_Mat.exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire 
+Execute       gen_rtl Block_Mat.exit45_pro -style xilinx -f -lang vhdl -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/vhdl/Block_Mat_exit45_pro 
+Execute       gen_rtl Block_Mat.exit45_pro -style xilinx -f -lang vlog -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/verilog/Block_Mat_exit45_pro 
+Execute       gen_tb_info Block_Mat.exit45_pro -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro -p C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db 
+Execute       report -model Block_Mat.exit45_pro -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/report/Block_Mat_exit45_pro_csynth.rpt -f 
+Execute       report -model Block_Mat.exit45_pro -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/report/Block_Mat_exit45_pro_csynth.xml -f -x 
+Execute       report -model Block_Mat.exit45_pro -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.verbose.rpt -verbose -f 
+Execute       db_write -model Block_Mat.exit45_pro -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model AXIvideo2Mat -vendor xilinx -mg_file C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat'.
+INFO: [HLS 200-111]  Elapsed time: 0.111 seconds; current allocated memory: 239.699 MB.
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/systemc/AXIvideo2Mat -synmodules Block_Mat.exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vhdl -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/vhdl/AXIvideo2Mat 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vlog -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/verilog/AXIvideo2Mat 
+Execute       gen_tb_info AXIvideo2Mat -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat -p C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db 
+Execute       report -model AXIvideo2Mat -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/report/AXIvideo2Mat_csynth.rpt -f 
+Execute       report -model AXIvideo2Mat -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/report/AXIvideo2Mat_csynth.xml -f -x 
+Execute       report -model AXIvideo2Mat -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.verbose.rpt -verbose -f 
+Execute       db_write -model AXIvideo2Mat -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hls_fire_dection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model hls_fire_dection -vendor xilinx -mg_file C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'fire_mac_muladd_8ns_8ns_16ns_16_1_1' to 'fire_mac_muladd_8bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fire_mac_muladd_8ns_6ns_16ns_16_1_1' to 'fire_mac_muladd_8cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fire_mac_muladd_8ns_7s_15ns_16_1_1' to 'fire_mac_muladd_8dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fire_mac_muladd_8ns_8s_16s_16_1_1' to 'fire_mac_muladd_8eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fire_mac_muladd_8ns_6s_15ns_16_1_1' to 'fire_mac_muladd_8fYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'fire_mac_muladd_8bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fire_mac_muladd_8cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fire_mac_muladd_8dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fire_mac_muladd_8eOg': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fire_mac_muladd_8fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hls_fire_dection'.
+INFO: [HLS 200-111]  Elapsed time: 0.266 seconds; current allocated memory: 240.361 MB.
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.rtl_wrap.cfg.tcl 
+Execute       gen_rtl hls_fire_dection -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/systemc/hls_fire_dection -synmodules Block_Mat.exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire 
+Execute       gen_rtl hls_fire_dection -style xilinx -f -lang vhdl -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/vhdl/hls_fire_dection 
+Execute       gen_rtl hls_fire_dection -style xilinx -f -lang vlog -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/verilog/hls_fire_dection 
+Execute       gen_tb_info hls_fire_dection -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection -p C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db 
+Execute       report -model hls_fire_dection -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/report/hls_fire_dection_csynth.rpt -f 
+Execute       report -model hls_fire_dection -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/report/hls_fire_dection_csynth.xml -f -x 
+Execute       report -model hls_fire_dection -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.verbose.rpt -verbose -f 
+Execute       db_write -model hls_fire_dection -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Mat2AXIvideo -vendor xilinx -mg_file C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mat2AXIvideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.268 seconds; current allocated memory: 241.291 MB.
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/systemc/Mat2AXIvideo -synmodules Block_Mat.exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vhdl -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/vhdl/Mat2AXIvideo 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vlog -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/verilog/Mat2AXIvideo 
+Execute       gen_tb_info Mat2AXIvideo -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo -p C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db 
+Execute       report -model Mat2AXIvideo -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/report/Mat2AXIvideo_csynth.rpt -f 
+Execute       report -model Mat2AXIvideo -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/report/Mat2AXIvideo_csynth.xml -f -x 
+Execute       report -model Mat2AXIvideo -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.verbose.rpt -verbose -f 
+Execute       db_write -model Mat2AXIvideo -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fire' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model fire -vendor xilinx -mg_file C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/input_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/input_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/input_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/input_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/input_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/input_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/input_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/output_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/output_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/output_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/output_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/output_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/output_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/output_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/rows' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/cols' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/r_low' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/r_up' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/g_low' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/g_up' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/b_low' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fire/b_up' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fire' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'rows', 'cols', 'r_low', 'r_up', 'g_low', 'g_up', 'b_low' and 'b_up' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_hls_fire_dection_U0' to 'start_for_hls_firg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Mat2AXIvideo_U0' to 'start_for_Mat2AXIhbi' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fire'.
+Command       create_rtl_model done; 0.197 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 242.316 MB.
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.rtl_wrap.cfg.tcl 
+Execute       gen_rtl fire -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/systemc/fire -synmodules Block_Mat.exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire 
+Execute       gen_rtl fire -istop -style xilinx -f -lang vhdl -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/vhdl/fire 
+Execute       gen_rtl fire -istop -style xilinx -f -lang vlog -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/verilog/fire 
+Execute       export_constraint_db -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.constraint.tcl -f -tool general 
+Execute       report -model fire -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.design.xml -verbose -f -dv 
+Command       report done; 0.106 sec.
+Execute       report -model fire -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info fire -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire -p C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db 
+Execute       report -model fire -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/report/fire_csynth.rpt -f 
+Execute       report -model fire -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/syn/report/fire_csynth.xml -f -x 
+Execute       report -model fire -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.verbose.rpt -verbose -f 
+Execute       db_write -model fire -o C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.adb -f 
+Execute       sc_get_clocks fire 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain fire 
+INFO-FLOW: Model list for RTL component generation: Block_Mat.exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire
+INFO-FLOW: Handling components in module [Block_Mat_exit45_pro] ... 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.compgen.tcl 
+INFO-FLOW: Handling components in module [AXIvideo2Mat] ... 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO-FLOW: Handling components in module [hls_fire_dection] ... 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.compgen.tcl 
+INFO-FLOW: Found component fire_mac_muladd_8bkb.
+INFO-FLOW: Append model fire_mac_muladd_8bkb
+INFO-FLOW: Found component fire_mac_muladd_8cud.
+INFO-FLOW: Append model fire_mac_muladd_8cud
+INFO-FLOW: Found component fire_mac_muladd_8dEe.
+INFO-FLOW: Append model fire_mac_muladd_8dEe
+INFO-FLOW: Found component fire_mac_muladd_8eOg.
+INFO-FLOW: Append model fire_mac_muladd_8eOg
+INFO-FLOW: Found component fire_mac_muladd_8fYi.
+INFO-FLOW: Append model fire_mac_muladd_8fYi
+INFO-FLOW: Handling components in module [Mat2AXIvideo] ... 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO-FLOW: Handling components in module [fire] ... 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.compgen.tcl 
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w32_d4_A.
+INFO-FLOW: Append model fifo_w32_d4_A
+INFO-FLOW: Found component fifo_w32_d4_A.
+INFO-FLOW: Append model fifo_w32_d4_A
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component start_for_hls_firg8j.
+INFO-FLOW: Append model start_for_hls_firg8j
+INFO-FLOW: Found component start_for_Mat2AXIhbi.
+INFO-FLOW: Append model start_for_Mat2AXIhbi
+INFO-FLOW: Found component fire_AXILiteS_s_axi.
+INFO-FLOW: Append model fire_AXILiteS_s_axi
+INFO-FLOW: Append model Block_Mat_exit45_pro
+INFO-FLOW: Append model AXIvideo2Mat
+INFO-FLOW: Append model hls_fire_dection
+INFO-FLOW: Append model Mat2AXIvideo
+INFO-FLOW: Append model fire
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: fire_mac_muladd_8bkb fire_mac_muladd_8cud fire_mac_muladd_8dEe fire_mac_muladd_8eOg fire_mac_muladd_8fYi fifo_w32_d3_A fifo_w32_d3_A fifo_w32_d4_A fifo_w32_d4_A fifo_w32_d3_A fifo_w32_d3_A fifo_w32_d3_A fifo_w32_d3_A fifo_w32_d3_A fifo_w32_d3_A fifo_w32_d2_A fifo_w32_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A start_for_hls_firg8j start_for_Mat2AXIhbi fire_AXILiteS_s_axi Block_Mat_exit45_pro AXIvideo2Mat hls_fire_dection Mat2AXIvideo fire
+INFO-FLOW: To file: write model fire_mac_muladd_8bkb
+INFO-FLOW: To file: write model fire_mac_muladd_8cud
+INFO-FLOW: To file: write model fire_mac_muladd_8dEe
+INFO-FLOW: To file: write model fire_mac_muladd_8eOg
+INFO-FLOW: To file: write model fire_mac_muladd_8fYi
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w32_d4_A
+INFO-FLOW: To file: write model fifo_w32_d4_A
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model start_for_hls_firg8j
+INFO-FLOW: To file: write model start_for_Mat2AXIhbi
+INFO-FLOW: To file: write model fire_AXILiteS_s_axi
+INFO-FLOW: To file: write model Block_Mat_exit45_pro
+INFO-FLOW: To file: write model AXIvideo2Mat
+INFO-FLOW: To file: write model hls_fire_dection
+INFO-FLOW: To file: write model Mat2AXIvideo
+INFO-FLOW: To file: write model fire
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.101 sec.
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.103 sec.
+Command       ap_source done; 0.103 sec.
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.compgen.tcl 
+INFO: [RTMG 210-285] Implementing FIFO 'rows_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cols_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_1_rows_V_c_U(fifo_w32_d4_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_1_cols_V_c_U(fifo_w32_d4_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'r_low_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'r_up_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'g_low_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'g_up_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'b_low_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'b_up_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_rows_V_channel_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_cols_V_channel_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_data_stream_0_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_1_data_stream_0_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_1_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_1_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_hls_firg8j_U(start_for_hls_firg8j)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Mat2AXIhbi_U(start_for_Mat2AXIhbi)' using Shift Registers.
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.237 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.118 sec.
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.121 sec.
+Command       ap_source done; 0.121 sec.
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=fire xml_exists=0
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.tbgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Block_Mat_exit45_pro.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/hls_fire_dection.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.compgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.constraint.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=22
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=31 #gSsdmPorts=28
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.tbgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.tbgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.tbgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.tbgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.tbgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.tbgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.tbgen.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_export -xo 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/fire.constraint.tcl 
+Execute       sc_get_clocks fire 
+Execute       source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 304.133 ; gain = 219.238
+INFO: [SYSC 207-301] Generating SystemC RTL for fire.
+INFO: [VHDL 208-304] Generating VHDL RTL for fire.
+INFO: [VLOG 209-307] Generating Verilog RTL for fire.
+Command     autosyn done; 4.988 sec.
+Execute     get_part 
+Execute     get_config_export -sdx_tcl 
+Command   csynth_design done; 21.277 sec.
+Command ap_source done; 21.559 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1 opened at Fri Apr 14 14:13:12 +0800 2023
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.145 sec.
+Execute     source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.207 sec.
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.219 sec.
+Command     ap_source done; 0.223 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-2 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-2'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_export -display_name=fire 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.62 sec.
+Execute   csim_design -clean -quiet 
+Execute     source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/test.PNG 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/test.PNG 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/skin_tb.cpp 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/skin_tb.cpp 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/home.png 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/home.png 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_6.PNG 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_6.PNG 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_5.PNG 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_5.PNG 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_3.png 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_3.png 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_2.png 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_2.png 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_1.png 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_1.png 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/top.h 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/top.h 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/top.cpp 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/top.cpp 
+Execute     get_default_platform 
+Execute     source run_sim.tcl 
+Command     ap_source done; 8.114 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 25.494 sec.
+Command ap_source done; 26.131 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1 opened at Fri Apr 14 14:13:52 +0800 2023
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.112 sec.
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.114 sec.
+Command     ap_source done; 0.114 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/VIVADO2018.3/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-2 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-2'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_export -display_name=fire 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.212 sec.
+Execute   csim_design -clean -quiet 
+Execute     source C:/Users/Lucy/Desktop/skin_test/skin_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/test.PNG 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/test.PNG 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/skin_tb.cpp 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/skin_tb.cpp 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/home.png 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/home.png 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_6.PNG 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_6.PNG 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_5.PNG 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_5.PNG 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_3.png 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_3.png 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_2.png 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_2.png 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_1.png 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/fire_1.png 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/top.h 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/top.h 
+Execute     is_encrypted C:/Users/Lucy/Desktop/skin_test/skin_hls/top.cpp 
+Execute     is_xip C:/Users/Lucy/Desktop/skin_test/skin_hls/top.cpp 
+Execute     get_default_platform 
+Execute     source run_sim.tcl 
+Command     ap_source done; 6.971 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 20.59 sec.
+Command ap_source done; 20.806 sec.
+Execute cleanup_all 
